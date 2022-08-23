@@ -1,62 +1,85 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    /* ASK IF I NEED COLUMNS */
+
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 /*Element selector*/
-/*Sets background color to light green*/
+/*Sets background color to light purple*/
 
 body {
-    background-color: #d9dcd6;
+    background-color: rgb(225, 188, 225);
+}
+
+
+
+
+/* Centering the page */
+
+.wrapper {
+    max-width: 60em;
+    margin: 0 auto;
 }
 
 /*Class selector*/
 /*Selects all elements of the header class, setting padding to 20px, font-family, background to dark blue, and color to white*/
 
 .header {
+    border: 1px solid rgb(7, 7, 39);
+    background-color: #333;
+    overflow: hidden;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 /*Selects the h1 elements within the class = "header;" sets header to inline-block & font-size to 48 pixels
 Inline-block: Like the inline element, doesn't start on a new line, but can set width and height values*/
 
 .header h1 {
+    position: left;
     display: inline-block;
     font-size: 48px;
+    background-color: purple;
 }
 
-/*Selects all SEO elements that are descendants of header elements with the h1 tag, setting the color to light green*/
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
 
 /*Sets measurements, positioning, font-family and font-size for the navigation bar - which you can find in HTML doc-
 nav element contains a class attribute with the value of "header", header contains a div element*/
 
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
 /*Sets the list style type as none for the unordered list in the div element, assigned the value of "header"
 to none means there are no markers for the items in this list - see  https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type*/
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
 /*Sets the display of the list elements of the unordered list in nav bar to inline block and sets the margin to 25 px
 on the left side of the navigation: nav element contains a class attribute with the value of "header", header contains a div element.... etc*/
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    border-bottom: 2px solid rgb(218, 180, 218);
 }
 
 /*Sets the color to white and text-decoration to none for all a elements*/
@@ -64,6 +87,7 @@ on the left side of the navigation: nav element contains a class attribute with 
 a {
     color: #ffffff;
     text-decoration: none;
+
 }
 
 /*Sets font size of all p elemnts*/
@@ -74,107 +98,236 @@ p {
 
 /*Selects elements of the hero-image class, setting the display to flex, the flex-drection to column, and inserting a background-image*/
 .hero-image {
-    margin: 3%;
-    position: relative;;
-    background-image: url("purple-green-background.jpg");
-   
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-image: url("../../images/purple-green-banner.jpg");
+    position: relative;
+    text-align: center;
 }
 
-/*Changed positioning of first-txt element */
-.first-txt {
+.hero-image img {
+    width: 100%;
+    height: 10%;
+
+}
+
+.hero-image div {
     position: absolute;
-    top: 17px;
-    left: 50px;
-    text-align: center; 
+    bottom: 25%;
+    right: 32%;
+    left: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.pages {
+    margin: 1%;
+    display: flex;
+}
+
+.sidebar {
+    left: 60%;
+    width: 10%;
+    padding: 2%;
+    margin: 3%;
+    border-right: 2px solid black;
+}
+
+.sidebar h2 {
+    width: 50%;
+    padding: 2%;
+    margin: 3%;
+}
+
+
+.main-content {
+    width: 65%;
+}
+
+.main-content h2 {
+    /* color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: left;
+    margin-bottom: 20px;
+    font-size: 26px;
+    width: 100%;
+    display: flex; */
+
+    position: left;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Sets elements in the float-left class float left and the margin area on the right-side 25px*/
 
 .float-left {
     float: left;
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
-/*Sets elements in the float-right class float right and the margin area on the right-side 25px*/
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
 /*Sets width 75%, dispaly inline-block, and the margin area on teh left side 20px of elements in the content class*/
 
 .content {
     width: 75%;
-    display: inline-block;
+    display: flex;
     margin-left: 20px;
 }
 
 /*Sets the following properties of the search-engine optimization, online-reputation-mangement, and social-media marketing classes;
 sets the background color to blue and color to white for these classes*/
 
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+
+.aboutme-image {
+
+    max-height: 350px;
+    display: flex;
+
+}
+
+.aboutme-image img {
+  position: left;
+}
+
+
+.sectionarticle {
     margin-bottom: 20px;
+    display: flex;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: #0072bb; */
 }
 
-/*Sets the max-height property of the image elements of the search-engine optimization, online-reputation management, and social media marekting classes*/
-
-.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-    max-height: 200px;
-}
-
-/*Sets the following properties of the h2 element of the search-engine optimization, online-reputation management, and social media marekting classes*/
-
-.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+.sectionarticle h2 {
+    position: left;
+    margin-left: 90px;
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Sets the font-family, color, and text-decoration of the resume id*/
+.sectionarticle #resume {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/*Sets the following properties of the work-image class; sets the position to relative
+sets the width to 100% and height to 10% for the img element
+*/
+
+.work-image {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-image: url("../../images/purple-green-background.jpg"); */
+    position: relative;
+}
+
+.work-image img {
+    width: 100%;
+    height: 10%;
+
+}
+
+.work-image div {
+    position: absolute;
+    background-color: #2589bd;
+    bottom: 50%;
+    right: 30%;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 2px;
 }
 
 /*Sets the following properties of the benefits class; sets background color to blue*/
 
-.benefits {
+.contact-form {
     margin-right: 20px;
-    padding: 20px;
+    margin: 5%;
+    padding: 5%;
     clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-/* Sets the bottom margin to 32 px and color to white of the benefit-lead, benefit-brand, & benefit-cost classes*/
-
-.benefit-lead, .benefit-brand, .benefit-cost  {
-    margin-bottom: 32px;
-    color: #ffffff;  
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/*Selects the h3 elements of the benefit-lead, benefit-brand, & benefit-cost classes and sets their bottom margin to 10px and 
-aligns text to center*/
-
-.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-/*Sets the image elements of the benefit-lead, benefit-brand, & benefit-cost classes to display as block, their margin as 10px auto, 
-& max-width to 150 px
-By assigning auto to the left and right margins of an element, they take up the available horizontal space 
-in the element’s container equally – so the element gets centered.*/
-
-.benefit-lead img, .benefit-brand img, .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
 
-/*Sets the following properties of the footer class*/
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .footer {
     padding: 30px;
@@ -185,7 +338,108 @@ in the element’s container equally – so the element gets centered.*/
 
 /*Sets the font size of the h2 element of the footer class*/
 
-.footer h2 {
+.footer h4 {
     font-size: 20px;
 }
+
+/* MEDIA QUERIES  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-form {
+
+        width: 85%;
+        margin-top: 0; 
+    }
+}
+@media only screen and (min-width: 600px) {
+    .contact-form {
+
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid rgb(7, 7, 39);
+}
+
+
+
+@media only screen and (max-width: 1285px) {
+
+    /* For tablets: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin: 2%
+    }
+
+    .hero-image div {
+        bottom: 10%;
+        margin: 2%;
+    }
+
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+   Show the link that contains should open and close the nav (.icon) */
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
 }
