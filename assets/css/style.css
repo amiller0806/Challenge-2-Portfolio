@@ -169,10 +169,10 @@ p {
 
 /*Sets elements in the float-left class float left and the margin area on the right-side 25px*/
 
-.float-left {
+/* .float-left {
     float: left;
     margin-right: 40px;
-}
+} */
 
 /*Sets width 75%, dispaly inline-block, and the margin area on teh left side 20px of elements in the content class*/
 
@@ -188,30 +188,42 @@ sets the background color to blue and color to white for these classes*/
 
 .aboutme-image {
 
-    max-height: 350px;
+    /* max-height: 350px; */
     display: flex;
 
+}
+
+.aboutme-image div{
+    max-width: 50%;
 }
 
 .aboutme-image img {
-  position: left;
+  /* position: left; */
+  width: 100%;
 }
 
+.aboutme-image p {
+    padding: 1%;
+    letter-spacing: 1.5;
+    line-height: 2;
 
+}
 .sectionarticle {
     margin-bottom: 20px;
     display: flex;
-    padding: 50px;
-    height: 300px;
+    padding: 5%;
+    /* height: 300px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* background-color: #0072bb; */
 }
 
 .sectionarticle h2  {
-    position: left;
+    /* position: left;
     margin-left: 90px;
-    margin-bottom: 20px;
-    font-size: 26px;
+    margin-bottom: 20px; */
+    word-wrap:wrap;
+    font-size: 2rem;
+    text-align: right;
     width: 100%;
     display: flex;
     color: black;
@@ -230,11 +242,13 @@ sets the background color to blue and color to white for these classes*/
 sets the width to 100% and height to 10% for the img element
 */
 
-.work-image {
+.workme-image {
     /* display: flex; */
     /* flex-direction: column; */
     /* background-image: url("../../images/purple-green-background.jpg"); */
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .work-image img {
@@ -346,96 +360,23 @@ input[type=submit]:hover {
 
 /* MEDIA QUERIES  */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .contact-form {
-
-        width: 85%;
-        margin-top: 0; 
-    }
-}
-@media only screen and (min-width: 600px) {
-    .contact-form {
-
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid rgb(7, 7, 39);
-}
 
 
 
 @media only screen and (max-width: 1285px) {
 
-    /* For tablets: */
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
-
-    .contact-form {
-        margin: 2%
-    }
+    
 
     .hero-image div {
         bottom: 10%;
         margin: 2%;
     }
-
 }
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
    Show the link that contains should open and close the nav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 896px) {
     nav a:not(:first-child) {
         display: none;
     }
@@ -443,5 +384,21 @@ input[type=submit]:hover {
     nav a.icon {
         float: right;
         display: block;
+    }
+
+    .contact-form {
+
+        width: 85%;
+        margin-top: 0; 
+    }
+    .sectionarticle{
+        display: block;
+    }
+    .sidebar{
+        width: 100%;
+
+    }
+    .aboutme-image {
+        width: 100%;
     }
 }
