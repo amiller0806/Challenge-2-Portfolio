@@ -251,20 +251,29 @@ sets the width to 100% and height to 10% for the img element
     justify-content: space-evenly;
 }
 
-.work-image img {
+.projects {
+    margin:1%;
+
+    padding:1%;
+    width:40%;
+    position:relative;
+}
+.projects img {
     width: 100%;
-    height: 10%;
 
 }
 
-.work-image div {
+.projects h2{
+
     position: absolute;
-    background-color: #2589bd;
-    bottom: 50%;
-    right: 30%;
+    background-color: purple;
+    bottom: 15%;
+    width: 25%;
+    left:5%;
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 2px;
+    line-height: 2;
 }
 
 /*Sets the following properties of the benefits class; sets background color to blue*/
@@ -277,7 +286,7 @@ sets the width to 100% and height to 10% for the img element
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: purple;
 }
 
 /* Style inputs with type="text", select elements and textareas */
