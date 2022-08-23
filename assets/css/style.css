@@ -33,7 +33,9 @@ body {
 
 /*Class selector*/
 /*Selects all elements of the header class, setting padding to 20px, font-family, background to dark blue, and color to white*/
+/* The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
 
+ */
 .header {
     border: 1px solid rgb(7, 7, 39);
     background-color: #333;
@@ -205,7 +207,7 @@ sets the background color to blue and color to white for these classes*/
     /* background-color: #0072bb; */
 }
 
-.sectionarticle h2 {
+.sectionarticle h2  {
     position: left;
     margin-left: 90px;
     margin-bottom: 20px;
