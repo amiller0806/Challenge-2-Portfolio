@@ -1,12 +1,13 @@
+/* TODO: Remember to consolidate the CSS */
+/* TODO: Add Screenshot to Readme and link to website  */
 
-* {
-    box-sizing: border-box;
+    * {
+    box-sizing: border-box; 
     padding: 0;
-    margin: 0;
+    margin: 0
+    }
 
-    /* ASK IF I NEED COLUMNS */
 
-}
 .row::after {
     content: "";
     clear: both;
@@ -92,7 +93,7 @@ a {
 
 }
 
-/*Sets font size of all p elemnts*/
+/*Sets font size of all p elements*/
 
 p {
     font-size: 16px;
@@ -100,8 +101,6 @@ p {
 
 /*Selects elements of the hero-image class, setting the display to flex, the flex-drection to column, and inserting a background-image*/
 .hero-image {
-    /* display: flex; */
-    /* flex-direction: column; */
     background-image: url("../../images/purple-green-banner.jpg");
     position: relative;
     text-align: center;
@@ -130,7 +129,7 @@ p {
 }
 
 .sidebar {
-    left: 60%;
+    min-width:10%;
     width: 10%;
     padding: 2%;
     margin: 3%;
@@ -144,37 +143,8 @@ p {
 }
 
 
-.main-content {
-    width: 65%;
-}
 
-.main-content h2 {
-    /* color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: left;
-    margin-bottom: 20px;
-    font-size: 26px;
-    width: 100%;
-    display: flex; */
-
-    position: left;
-    margin-left: 90px;
-    margin-bottom: 20px;
-    font-size: 26px;
-    width: 100%;
-    display: flex;
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/*Sets elements in the float-left class float left and the margin area on the right-side 25px*/
-
-/* .float-left {
-    float: left;
-    margin-right: 40px;
-} */
-
-/*Sets width 75%, dispaly inline-block, and the margin area on teh left side 20px of elements in the content class*/
+ /* sets margin area on teh left side 20px of elements in the content class*/ */
 
 .content {
     width: 75%;
@@ -188,9 +158,8 @@ sets the background color to blue and color to white for these classes*/
 
 .aboutme-image {
 
-    /* max-height: 350px; */
     display: flex;
-
+    margin-left: 1%;
 }
 
 .aboutme-image div{
@@ -198,7 +167,6 @@ sets the background color to blue and color to white for these classes*/
 }
 
 .aboutme-image img {
-  /* position: left; */
   width: 100%;
 }
 
@@ -212,15 +180,11 @@ sets the background color to blue and color to white for these classes*/
     margin-bottom: 20px;
     display: flex;
     padding: 5%;
-    /* height: 300px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* background-color: #0072bb; */
+
 }
 
 .sectionarticle h2  {
-    /* position: left;
-    margin-left: 90px;
-    margin-bottom: 20px; */
     word-wrap:wrap;
     font-size: 2rem;
     text-align: right;
@@ -230,7 +194,7 @@ sets the background color to blue and color to white for these classes*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*Sets the font-family, color, and text-decoration of the resume id*/
+Sets the font-family, color, and text-decoration of the resume id
 .sectionarticle #resume {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: blue;
@@ -243,19 +207,17 @@ sets the width to 100% and height to 10% for the img element
 */
 
 .workme-image {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background-image: url("../../images/purple-green-background.jpg"); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 1%;
 }
 
 .projects {
-    margin:1%;
+    margin-bottom:1%; 
 
-    padding:1%;
-    width:40%;
+    padding-bottom:1%;
+    width:45%;
     position:relative;
 }
 .projects img {
@@ -264,27 +226,27 @@ sets the width to 100% and height to 10% for the img element
 }
 
 .projects h2{
-
+   color: white;
     position: absolute;
     background-color: purple;
     bottom: 15%;
     width: 25%;
-    left:5%;
+    left:4%;
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 2px;
     line-height: 2;
 }
 
+#feature {
+    width: 94%;
+}
 /*Sets the following properties of the benefits class; sets background color to blue*/
 
 .contact-form {
-    margin-right: 20px;
-    margin: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
     padding: 5%;
-    clear: both;
-    width: 20%;
-    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: purple;
 }
@@ -308,7 +270,7 @@ textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 input[type=text],
