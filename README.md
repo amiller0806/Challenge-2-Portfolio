@@ -38,11 +38,23 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./assets/02-advanced-css-homework-demo.gif)
+
+
 
 ## Review
 
-You are required to submit BOTH of the following for review:
+
+## Screenshot of deployed application 
+<!-- TODO: replace this with the website's screenshot-->
+![Screenshot of header, nav bar, & hero image](images/header-navbar-hero.jpg)
+![Screenshot of articles, search-engine optimization & online reputation management, & sidebar](images/articles-sidebar.jpg)
+![Screenshot of article  social media marketing, the sidebar, brand awareness & "cost management", & the footer](images/article-sidebar-footer.jpg)
+
+
+## URL to deployed application
+https://amiller0806.github.io/HTML-CSS-refactor/ 
+
 
 * The URL of the deployed application.
 

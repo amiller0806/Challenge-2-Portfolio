@@ -222,6 +222,7 @@ sets the width to 100% and height to 10% for the img element
 }
 .projects img {
     width: 100%;
+    opacity: .6;
 
 }
 
