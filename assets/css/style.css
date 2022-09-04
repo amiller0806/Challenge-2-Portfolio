@@ -1,6 +1,12 @@
 /* TODO: Remember to consolidate the CSS */
 /* TODO: Add Screenshot to Readme and link to website  */
 
+:root {
+    --primary-color: rgb(215, 134, 215);
+    --secondary-color: #800080;
+    --tertiary-color: rgb(225, 188, 225);
+}
+
     * {
     box-sizing: border-box; 
     padding: 0;
@@ -99,6 +105,33 @@ p {
     font-size: 16px;
 }
 
+/* FOOTER STYLES START */
+footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: var(--primary-color);
+  }
+  
+  /* END FOOTER STYLES */
+  
 /*Selects elements of the hero-image class, setting the display to flex, the flex-drection to column, and inserting a background-image*/
 .hero-image {
     background-image: url("../../images/purple-green-banner.jpg");
@@ -263,7 +296,7 @@ sets the width to 100% and height to 10% for the img element
 }
 
 #contact h2 {
-    padding: 30%;
+    padding: 10%;
     display: flex;
 }
 /*Sets the following properties of the benefits class; sets background color to blue*/
@@ -315,8 +348,8 @@ label {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--tertiary-color); 
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -325,7 +358,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--primary-color);
 }
 
 .container {
