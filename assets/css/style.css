@@ -129,7 +129,7 @@ p {
 }
 
 .sidebar {
-    min-width:10%;
+    min-width:15%;
     width: 10%;
     padding: 2%;
     margin: 3%;
@@ -144,7 +144,7 @@ p {
 
 
 
- /* sets margin area on teh left side 20px of elements in the content class*/ */
+ /* sets margin area on the left side 20px of elements in the content class*/ */
 
 .content {
     width: 75%;
@@ -156,17 +156,17 @@ p {
 sets the background color to blue and color to white for these classes*/
 
 
-.aboutme-image {
+.aboutme-image, .resume-image {
 
     display: flex;
     margin-left: 1%;
 }
 
-.aboutme-image div{
+.aboutme-image div {
     max-width: 50%;
 }
 
-.aboutme-image img {
+.aboutme-image img, .resume-image img {
   width: 100%;
 }
 
@@ -176,6 +176,9 @@ sets the background color to blue and color to white for these classes*/
     line-height: 2;
 
 }
+
+ 
+
 .sectionarticle {
     margin-bottom: 20px;
     display: flex;
@@ -194,15 +197,9 @@ sets the background color to blue and color to white for these classes*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-Sets the font-family, color, and text-decoration of the resume id
-.sectionarticle #resume {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: blue;
-    text-decoration: underline;
 
-}
 
-/*Sets the following properties of the work-image class; sets the position to relative
+/*Sets the following properties of the workme-image class; sets the position to relative
 sets the width to 100% and height to 10% for the img element
 */
 
@@ -210,12 +207,14 @@ sets the width to 100% and height to 10% for the img element
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: 1%;
+    /* padding: .005%; */
+    /* margin-left: .0002%; */
+    /* vertical-align: auto; */
+
 }
 
 .projects {
     margin-bottom:1%; 
-
     padding-bottom:1%;
     width:45%;
     position:relative;
@@ -223,26 +222,52 @@ sets the width to 100% and height to 10% for the img element
 .projects img {
     width: 100%;
     opacity: .6;
+    /* vertical-align: auto; */
 
 }
 
-.projects h2{
-   color: white;
+/* TODO: CONSOLIDATE THE FOLLOWING */
+.projects h2 {
+   color: black;
+    background-color: rgb(158, 125, 158);
+    width: auto;
     position: absolute;
-    background-color: purple;
-    bottom: 15%;
-    width: 25%;
-    left:4%;
-    font-size: 2rem;
-    font-style: italic;
+    /* font-style: italic; */
     letter-spacing: 2px;
-    line-height: 2;
+    line-height: 1; 
+    bottom: 15%;
+    left:4%;
+    /* display: flex; */
 }
+
+.feature-title {
+    color: black;
+    background-color: rgb(158, 125, 158);
+    width: 30%;
+    position: relative;
+    bottom: 15%;
+}
+
+ #website-title {
+    font-size: 1.5em;
+ }
+ 
+ #programming-language {
+    font-size: .5em;
+ }
+
+
 
 #feature {
     width: 94%;
 }
+
+#contact h2 {
+    padding: 30%;
+    display: flex;
+}
 /*Sets the following properties of the benefits class; sets background color to blue*/
+
 
 .contact-form {
     margin-right: 1%;
@@ -370,7 +395,8 @@ input[type=submit]:hover {
         width: 100%;
 
     }
-    .aboutme-image {
+    .aboutme-image, .resume-image {
         width: 100%;
     }
 }
+
