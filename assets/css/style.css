@@ -1,5 +1,6 @@
 /* TODO: Remember to consolidate the CSS */
 /* TODO: Add Screenshot to Readme and link to website  */
+/* TODO: MAKE IMAGES AND HEADINGS RESPONSIVE */
 
 :root {
     --primary-color: rgb(215, 134, 215);
@@ -7,11 +8,11 @@
     --tertiary-color: rgb(225, 188, 225);
 }
 
-    * {
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0
-    }
+}
 
 
 .row::after {
@@ -113,28 +114,28 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-  }
-  
-  footer h2 {
+}
+
+footer h2 {
     color: var(--primary-color);
     font-size: 30px;
     margin: 0;
-  }
-  
-  footer div {
+}
+
+footer div {
     line-height: 1.5;
     text-align: right;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: var(--primary-color);
-  }
-  
-  /* END FOOTER STYLES */
-  
+}
+
+/* END FOOTER STYLES */
+
 /*Selects elements of the hero-image class, setting the display to flex, the flex-drection to column, and inserting a background-image*/
 .hero-image {
-    background-image: url("../../images/purple-green-banner.jpg");
+    background-image: url("../../assets/images/purple-green-banner.jpg");
     position: relative;
     text-align: center;
 }
@@ -162,7 +163,7 @@ footer {
 }
 
 .sidebar {
-    min-width:15%;
+    min-width: 15%;
     width: 10%;
     padding: 2%;
     margin: 3%;
@@ -170,15 +171,29 @@ footer {
 }
 
 .sidebar h2 {
-    width: 50%;
+    width: 100%;
     padding: 2%;
     margin: 3%;
 }
 
+.contact-me {
+    min-width: 15%;
+    width: 10%;
+    padding: 2%;
+    margin: 3%;
+    border-right: 2px solid black;
+}
+/* .contact-me h2 {
+    /* display: flex; */
+    /* width: 100%;
+    justify-content: center;
+    */
+     /* */ 
 
 
- /* sets margin area on the left side 20px of elements in the content class*/ */
 
+
+/* sets margin area on the left side 20px of elements in the content class*/
 .content {
     width: 75%;
     display: flex;
@@ -189,7 +204,8 @@ footer {
 sets the background color to blue and color to white for these classes*/
 
 
-.aboutme-image, .resume-image {
+.aboutme-image,
+.resume-image {
 
     display: flex;
     margin-left: 1%;
@@ -199,8 +215,9 @@ sets the background color to blue and color to white for these classes*/
     max-width: 50%;
 }
 
-.aboutme-image img, .resume-image img {
-  width: 100%;
+.aboutme-image img,
+.resume-image img {
+    width: 100%;
 }
 
 .aboutme-image p {
@@ -210,7 +227,7 @@ sets the background color to blue and color to white for these classes*/
 
 }
 
- 
+
 
 .sectionarticle {
     margin-bottom: 20px;
@@ -220,8 +237,8 @@ sets the background color to blue and color to white for these classes*/
 
 }
 
-.sectionarticle h2  {
-    word-wrap:wrap;
+.sectionarticle h2 {
+    word-wrap: wrap;
     font-size: 2rem;
     text-align: right;
     width: 100%;
@@ -247,11 +264,12 @@ sets the width to 100% and height to 10% for the img element
 }
 
 .projects {
-    margin-bottom:1%; 
-    padding-bottom:1%;
-    width:45%;
-    position:relative;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    width: 45%;
+    position: relative;
 }
+
 .projects img {
     width: 100%;
     opacity: .6;
@@ -260,50 +278,59 @@ sets the width to 100% and height to 10% for the img element
 }
 
 /* TODO: CONSOLIDATE THE FOLLOWING */
-.projects h2 {
-   color: black;
-    background-color: rgb(158, 125, 158);
-    width: auto;
+
+
+/* Bottom left text */
+.bottom-left {
     position: absolute;
-    /* font-style: italic; */
-    letter-spacing: 2px;
-    line-height: 1; 
-    bottom: 15%;
-    left:4%;
-    /* display: flex; */
-}
-
-.feature-title {
+    bottom: 15px;
+    background-color: var(--primary-color);
     color: black;
-    background-color: rgb(158, 125, 158);
-    width: 30%;
-    position: relative;
-    bottom: 15%;
+    padding: 5px;
+    justify-content: left;
+    width: 13.5%;
+    line-height: 1.5;
 }
 
- #website-title {
+.bottom-left h2,
+.other-bottom-left h2 {
     font-size: 1.5em;
- }
- 
- #programming-language {
-    font-size: .5em;
- }
+    font-weight: bold;
+}
 
+.bottom-left p {
+    font-size: .9em;
+}
+
+/* TODO: CONSOLIDATE */
+.other-bottom-left {
+    position: absolute;
+    bottom: 14px;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 6px;
+    justify-content: left;
+    width: 24.5%;
+    line-height: 1.5;
+    letter-spacing: .5;
+}
 
 
 #feature {
     width: 94%;
 }
 
-#contact h2 {
+/* #contact h2 {
     padding: 10%;
     display: flex;
-}
+} */
+
 /*Sets the following properties of the benefits class; sets background color to blue*/
 
 
 .contact-form {
     margin-right: 1%;
+    color: white;
     margin-left: 1%;
     padding: 5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -329,7 +356,7 @@ textarea {
     margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 input[type=text],
@@ -348,7 +375,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: var(--tertiary-color); 
+    background-color: var(--tertiary-color);
     color: black;
     padding: 12px 20px;
     border: none;
@@ -395,7 +422,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 1285px) {
 
-    
+
 
     .hero-image div {
         bottom: 10%;
@@ -418,18 +445,105 @@ input[type=submit]:hover {
 
     .contact-form {
 
-        width: 85%;
-        margin-top: 0; 
+        width: 100%;
+        margin-right: 70%;
+        padding-right:8px;
+        padding-left: 8px;
+        left: 5px;
+        padding-bottom: 70px;
     }
-    .sectionarticle{
+
+
+    .sectionarticle {
         display: block;
     }
-    .sidebar{
+
+    /* .sidebar {
+    border-style: outset;
+} */
+
+    .sidebar {
         width: 100%;
+        border-right: none;
 
     }
-    .aboutme-image, .resume-image {
+
+    .sidebar h2 {
+        border-bottom: 2px solid black;
+        /* width: 100%; */
+        justify-content: center;
+        display: flex;
+        padding: 6px;
+    }
+
+    .contact-me {
+        border-right: none;
         width: 100%;
     }
+
+     .contact-me h2 {
+        top: 78px;
+        /* display: flex; */
+        width: 100%;
+        justify-content: center;
+        border-bottom: 2px solid black;
+       
+        
+
+    }
+    .aboutme-image {
+        width: 100%;
+        display: flex;
+    }
+
+    .resume-image img {
+        padding-top: 2%;
+        height: 270px;
+        width: 290px;
+        /* display: flex; */
+    }
+
+  
+    #feature img {
+        width: 300px;
+        height: 270px;
+        /* position: absolute; */
+    }
+ 
+    #placeholder-image img {
+
+        height: 100px;
+
+    } 
+
+    .bottom-left {
+        width: 50%;
+        bottom: 4.1%;
+        position: absolute;
+        padding-left: 7px;
+        padding-right: 7px;
+
+    } 
+
+.footer {
+    width: 120%;
 }
+/* 
+    .bottom-left p {
 
+        width: 48%;
+        bottom: 7.5px; 
+    } */
+
+    .other-bottom-left {
+        /* margin: 2%; */
+        width: 90%;
+        bottom: 5.9px;
+        padding: px;
+        /* position: absolute; */
+    }
+
+    /* .other-bottom-left h2 {
+        width: 10px;
+    } */
+}
