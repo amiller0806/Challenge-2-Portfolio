@@ -278,6 +278,10 @@ h2,
     font-weight: bold;
 }
 
+.resume-image img {
+    height: 550px;
+}
+
 .aboutme-image,
 .resume-image,
 .contact-form {
@@ -423,6 +427,7 @@ input[type=submit] {
         width: 300px;
     }
 
+
     .aboutme-text p {
         font-size: 12px;
         margin-right: 45%;
@@ -558,7 +563,6 @@ input[type=submit] {
     .resume-image img {
         padding-top: 1%;
         padding-right: 5%;
-        height: 300px;
     }
 
     .aboutme-text p,
