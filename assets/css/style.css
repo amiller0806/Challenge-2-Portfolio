@@ -11,10 +11,12 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    /* Padding is used to create space around an element's content, inside of any defined borders. */
+    margin: 0;
+    /* Margins are used to create space around elements, outside of any defined borders. */
 }
 
-/*Sets background color to light purple, (var(--tertiary-color) */
+/*Sets background color to light purple*/
 body {
     background-color: var(--tertiary-color)
 }
@@ -27,7 +29,7 @@ body {
 
 /* HEADER STYLES START */
 
-/* TODO: INSERT COMMENT */
+/* Sets following properties for the header */
 .header {
     border: 1px solid black;
     background-color: #333;
@@ -35,11 +37,10 @@ body {
     padding: 20px;
 }
 
-/* TODO: INSERT COMMENT */
+/* Sets position & font-size of h1 header element */
 .header h1 {
     position: left;
     font-size: 48px;
-
 }
 
 /*Sets padding-top and margin-right for the navigation bar */
@@ -60,7 +61,7 @@ body {
     display: inline;
 }
 
-/* Sets background color of the h1 element in the header & for the contact-form to var(--secondary-color)    */
+/* Sets background color of the h1 element in the header & for the contact-form to purple   */
 .header h1,
 .contact-form {
     background-color: var(--secondary-color);
@@ -93,14 +94,7 @@ a,
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Distribute elements in the header and footer evenly, the first item is flush with the start
-https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
- */
 /* Sets the following classes to display: flex */
-/* Display flex: Displays an element as a block-level flex container https://www.w3schools.com/cssref/pr_class_display.asp */
-/* Flex container: A flex container expands items 
-to fill available free space or shrinks them to prevent overflow.
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/#:~:text=A%20flex%20container%20expands%20items,which%20is%20horizontally%2Dbased). */
 .header,
 .sectionarticle,
 .sidebar h2,
@@ -109,9 +103,11 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#:~:text=A%20flex%20conta
 .workme-image,
 .footer {
     display: flex;
+    /* Display flex: Displays an element as a block-level flex container https://www.w3schools.com/cssref/pr_class_display.asp */
+    /* Flex container: A flex container expands items to fill available free space or shrinks them to prevent overflow. */
 }
 
-/* TODO: INSERT COMMENT */
+/* Distribute elements in the header and footer evenly, first item is flush with the start https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content   */
 .header,
 .footer {
     justify-content: space-between;
@@ -121,10 +117,9 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#:~:text=A%20flex%20conta
 
 /* STYLE A & P ELEMENTS START */
 
-/* Sets text-decoration to var(--tertiary-color), which underlines all a elements in a solid light-purple */
+/* Sets text-decoration to light purple, which underlines all a elements in a solid light-purple */
 a {
     text-decoration: var(--tertiary-color) 2px solid;
-
 }
 
 /*Sets font size of all p elements*/
@@ -133,7 +128,6 @@ p {
 }
 
 /* STYLE A & P ELEMENTS END */
-
 
 /* FOOTER STYLES START */
 
@@ -147,7 +141,7 @@ p {
     font-size: 12px;
 }
 
-/* TODO: INSERT COMMENT */
+/* Sets width as 100% for the following classes */
 .hero-image img,
 .sectionarticle h2,
 .sidebar h2,
@@ -162,19 +156,13 @@ textarea,
     width: 100%;
 }
 
-/* TODO: INSERT COMMENT */
+/* Sets flex-wrap:wrap for following classes */
 .resume-text p,
 .workme-image,
 .footer {
     flex-wrap: wrap;
-}
-
-/* TODO: INSERT COMMENT */
-.bottom-left,
-.other-bottom-left,
-input[type=submit]:hover,
-.footer {
-    background: var(--primary-color);
+    /* Flex-wrap: sets whether flex items are forced onto 1 line or can wrap onto multiple lines. If wrapping is allowed, 
+    it sets the direction that lines are stacked. https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
 }
 
 /*  FOOTER STYLES END */
@@ -201,26 +189,22 @@ input[type=submit]:hover,
     letter-spacing: 2px;
 }
 
-/* TODO: INSERT COMMENT*/
 .hero,
 .projects {
     position: relative;
 }
 
-/* TODO: INSERT COMMENT*/
 .hero-image div,
 .bottom-left,
 .other-bottom-left {
     position: absolute;
 }
 
-/* TODO: INSERT COMMENT*/
 .hero-image h2,
 input[type=submit] {
     color: black;
 }
 
-/* TODO: INSERT COMMENT*/
 .hero,
 .footer {
     text-align: center;
@@ -230,22 +214,21 @@ input[type=submit] {
 
 /*  SECTIONARTICLE STYLES START  */
 
-/* TODO: INSERT COMMENT*/
 .sectionarticle {
     margin-bottom: 20px;
 }
 
-/* TODO: INSERT COMMENT*/
 .sectionarticle,
 .resume-text p,
 .contact-form {
     padding: 5%;
 }
 
-/* TODO: INSERT COMMENT*/
+/* Sets the following properties for the sectionarticle & contact-me h2 elements  */
 .sectionarticle h2,
 .contact-me h2 {
     word-wrap: wrap;
+    /* The word-wrap property allows long words to be able to be broken & wrap onto the next line. */
     font-size: 2rem;
     text-align: right;
 }
@@ -260,14 +243,12 @@ input[type=submit] {
     width: 10%;
 }
 
-/* TODO: INSERT COMMENT*/
 .sidebar,
 .aboutme-text p,
 .contact-me {
     padding: 2%;
 }
 
-/* TODO: INSERT COMMENT*/
 .sidebar,
 h2,
 .sectionarticle h2,
@@ -276,47 +257,44 @@ h2,
     color: var(--secondary-color);
 }
 
-/* TODO: INSERT COMMENT*/
 .sidebar,
 .contact-me {
     margin: 3%;
     border-right: 2px solid var(--secondary-color);
 }
+
 /* SIDEBAR STYLES END  */
 
 /* ABOUT ME AND RESUME STYLES START */
-
-/* TODO: INSERT COMMENT*/
 .aboutme-text,
 .resume-text p {
     letter-spacing: 1.5;
     line-height: 2;
 }
 
-/* TODO: INSERT COMMENT*/
-/* Sets flax-wrap to wrap & font-weight to bold for p elements of the resume-text class*/
 .resume-text p,
 .bottom-left h2,
 .other-bottom-left h2 {
     font-weight: bold;
 }
 
-/* TODO: INSERT COMMENT*/
 .aboutme-image,
 .resume-image,
 .contact-form {
     margin-left: 1%;
 }
+
 /* ABOUT ME AND RESUME STYLES END */
 
 /* MY WORK STYLES START */
 
-/* TODO: INSERT COMMENT*/
+/* Sets content of work-me image to "space-evenly," which distributes items evenly and items have equal space around them 
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 .workme-image {
     justify-content: space-evenly;
 }
 
-/* TODO: INSERT COMMENT*/
+/* Sets the following properties for the projects class */
 .projects {
     margin-bottom: 1%;
     padding-bottom: 1%;
@@ -328,7 +306,7 @@ h2,
     opacity: .5;
 }
 
-/* TODO: INSERT COMMENT*/
+/* Sets the following properties for the bottom left & other bottom left classes */
 .bottom-left .other-bottom-left {
     justify-content: left;
     line-height: 1.5;
@@ -342,13 +320,11 @@ h2,
     width: 13.5%;
 }
 
-/* Sets the font-size & font-weight for the h2 elements of the bottom-left & other-bottom-left classes */
 .bottom-left h2,
 .other-bottom-left h2 {
     font-size: 1.5em;
 }
 
-/* Sets the font-size for p elements of the bottom-left class*/
 .bottom-left p {
     font-size: .7em;
 }
@@ -360,10 +336,19 @@ h2,
     width: 24.5%;
 }
 
+/* Sets background color to light purple */
+.bottom-left,
+.other-bottom-left,
+input[type=submit]:hover,
+.footer {
+    background-color: var(--primary-color);
+}
+
 /* Sets the width to 94 for all elements with the id, feature */
 #feature {
     width: 94%;
 }
+
 /* MY WORK SECTION END */
 
 /* CONTACT ME STYLES START */
@@ -409,26 +394,30 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
+
 /* End of adapted code form w3 schools, with my own modifications */
 /* CONTACT FORM END */
 /* CONTACT ME SECTION STYLES END */
 
 /* MEDIA QUERIES START */
 
-/* MEDIA QUERY 1 */
+/* Media Query 1 */
 
 /* Sets Media query properties for screens = or less than 1285px  */
-/* TODO: INSERT COMMENT ON GENERALLY WHAT BELOW YOU ARE DOING*/
-/* TODO: INSERT COMMENT ON each section styles */
-/* TODO: ORDER THIS SECTION  */
 @media only screen and (max-width: 1285px) {
+
+    /* HEADER STYLES FOR MEDIA QUERY 1 START */
     .header h1 {
         font-size: 28px;
     }
+
     nav {
         width: 100%;
     }
 
+    /*HEADER STYLES FOR MEDIA QUERY 1 END*/
+
+    /*ABOUT ME & RESUME STYLES FOR MEDIA QUERY 1 START*/
     .aboutme-image img,
     .resume-image img {
         width: 300px;
@@ -437,13 +426,15 @@ input[type=submit] {
     .aboutme-text p {
         font-size: 12px;
         margin-right: 45%;
-
     }
 
     .resume-image p {
         margin-right: 65%;
     }
 
+    /*ABOUT ME & RESUME STYLES FOR MEDIA QUERY 1 END*/
+
+    /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
     #feature img {
         width: 85%;
     }
@@ -461,11 +452,13 @@ input[type=submit] {
         width: 30%;
     }
 
+    /* MY WORK STYLES FOR MEDIA QUERY 1 END*/
+
+    /* CONTACT FORM STYLES FOR MEDIA QUERY 1 START*/
     .contact-me {
         margin-right: 5%;
         min-width: 15%;
         width: 10%;
-
     }
 
     .contact-form {
@@ -473,29 +466,28 @@ input[type=submit] {
     }
 }
 
+/* CONTACT FORM STYLES FOR MEDIA QUERY 1 END */
+/* MEDIA 1 STYLES END */
+
 /* MEDIA QUERY 2 */
 /* Sets media query properties for screens = or less than 896px */
-
 @media screen and (max-width: 896px) {
-/* TODO: INSERT COMMENT ON GENERALLY WHAT BELOW YOU ARE DOING*/
-/* TODO: ORDER THIS SECTION */
 
-    nav div ul li {
-        padding: 3px;
-    }
+    /* MEDIA QUERY 2 STYLES START*/
 
-    .header h1 {
-        font-size: 30px;
-        width: 60%;
-    }
-
+    /* HEADER STYLES FOR MEDIA QUERY 2 START*/
     .header {
         padding: 1px;
     }
 
-    .header,
-    .hero-image {
-        width: 150%;
+    .header h1 {
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .header nav ul li {
+        display: flex;
+        width: 10%;
     }
 
     nav ul li {
@@ -504,15 +496,25 @@ input[type=submit] {
 
     }
 
-    .header nav ul li {
-        display: flex;
-        width: 10%;
+    nav div ul li {
+        padding: 3px;
     }
 
+    .header,
+    .hero-image {
+        width: 150%;
+    }
+
+    /* HEADER STYLES FOR MEDIA QUERY 2 END*/
+
+    /* SECTIONARTICLE STYLES FOR MEDIA QUERY 2 START*/
     .sectionarticle {
         display: block;
     }
 
+    /* SECTIONARTICLE STYLES FOR MEDIA QUERY 2 END*/
+
+    /* SIDEBAR STYLES FOR MEDIA QUERY 2 START*/
     .sidebar,
     .resume-image img,
     #feature img,
@@ -525,26 +527,21 @@ input[type=submit] {
     .sidebar,
     .contact-me {
         border-right: none;
-
     }
 
     .sidebar h2,
     .contact-me h2 {
         border-bottom: 2px solid var(--secondary-color);
-
     }
-
 
     .sidebar h2 {
         padding: 6px;
         justify-content: center;
     }
 
-    /* Sidebar styles for Media Query 2 END */
+    /* SIDEBAR STYLES FOR MEDIA QUERY 2 END */
 
-
-    /* About Me Styles for Media Query 2 START */
-    /* TODO: CONSOLIDATE AND COMMENT! */
+    /* ABOUT ME AND RESUME STYLES FOR MEDIA QUERY 2 START*/
     .aboutme-image {
         width: 70%;
     }
@@ -557,10 +554,6 @@ input[type=submit] {
     .resume-text p {
         font-size: 12px;
     }
-    /* About Me Styles for Media Query END *
-
-/* RESUME STYLES START for Media Query 2  */
-    /* TODO: CONSOLIDATE AND COMMENT! */
 
     .resume-image img {
         padding-top: 1%;
@@ -572,9 +565,10 @@ input[type=submit] {
     .other-bottom-left {
         width: 90%;
     }
-    /* RESUME STYLES END */
 
-    /* MY WORK STYLES START for Media Query 2  */
+    /* ABOUT ME & RESUME STYLES FOR MEDIA QUERY 2 END */
+
+    /* MY WORK STYLES FOR MEDIA QUERY 2 START */
 
     #placeholder-image img {
         height: 100px;
@@ -595,6 +589,9 @@ input[type=submit] {
         font-size: 11px;
     }
 
+    /* MY WORK STYLES FOR MEDIA QUERY 2 END */
+
+    /* CONTACT FORM STYLES FOR MEDIA QUERY 2 START */
     .contact-me {
         left: 100px;
     }
@@ -615,9 +612,15 @@ input[type=submit] {
         padding-bottom: 70px;
     }
 
+    /* CONTACT FORM STYLES FOR MEDIA QUERY 2 END*/
+
+    /* FOOTER STYLES FOR MEDIA QUERY 2 START */
     .footer {
         width: 120%;
     }
-    /* Contact Form Styles END for MEDIA QUERY 2 */
+
+    /* FOOTER STYLES FOR MEDIA QUERY 2 END */
+    /* MEDIA QUERY 2 STYLES END */
 }
+
 /* CONTENT STYLES END */
