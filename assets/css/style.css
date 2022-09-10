@@ -271,10 +271,15 @@ h2,
     line-height: 2;
 }
 
+.bottom-left h2,.other-bottom-left h3 {
+    text-align: left;
+}
+
 .resume-text p,
 .bottom-left h2,
 .other-bottom-left h3 {
     font-weight: bold;
+
 }
 
 .resume-image img {
@@ -318,7 +323,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 
 /* Sets the following properties for all elements of the bottom-left class */
 .bottom-left {
-    bottom: 20px;
     padding: 5px;
     width: 13.5%;
 }
@@ -405,13 +409,6 @@ input[type=submit] {
 /* MEDIA QUERIES START */
 
 /* Sets Media query properties for screens = or less than 1285px  */
-@media only screen and (max-width: 2800px) {
-    .bottom-left h2 {
-        text-align: left;
-    }
-}
-
-/* Sets Media query properties for screens = or less than 1285px  */
 @media only screen and (max-width: 1285px) {
 
     /* HEADER STYLES FOR MEDIA QUERY 1 START */
@@ -473,7 +470,7 @@ input[type=submit] {
 
     /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
     .bottom-left {
-        bottom: 2.5%;
+        bottom: 1.9%;
     }
 
     #feature img {
