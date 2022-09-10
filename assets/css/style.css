@@ -318,7 +318,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 
 /* Sets the following properties for all elements of the bottom-left class */
 .bottom-left {
-    bottom: 15px;
+    bottom: 20px;
     padding: 5px;
     width: 13.5%;
 }
@@ -462,7 +462,7 @@ input[type=submit] {
 
     /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
     .bottom-left {
-        bottom: 2.6%;
+        bottom: 2%;
     }
 
     #feature img {
@@ -474,7 +474,7 @@ input[type=submit] {
     }
 
     .other-bottom-left {
-        bottom: 4%;
+        bottom: 3.5%;
         width: 22%;
 
     }
