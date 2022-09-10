@@ -318,6 +318,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 .bottom-left .other-bottom-left {
     justify-content: left;
     line-height: 1.5;
+    position: absolute;
     letter-spacing: .5;
 }
 
@@ -470,7 +471,8 @@ input[type=submit] {
 
     /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
     .bottom-left {
-        bottom: 1.9%;
+        bottom: 2%;
+        position: absolute;
     }
 
     #feature img {
