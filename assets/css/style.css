@@ -472,7 +472,6 @@ input[type=submit] {
     /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
     .bottom-left {
         bottom: 2%;
-        position: absolute;
     }
 
     #feature img {
