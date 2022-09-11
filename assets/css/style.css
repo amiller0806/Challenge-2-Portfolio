@@ -275,6 +275,7 @@ h2,
     text-align: left;
 }
 
+
 .resume-text p,
 .bottom-left h2,
 .other-bottom-left h3 {
@@ -326,6 +327,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 .bottom-left {
     padding: 5px;
     width: 13.5%;
+    bottom: 2.8%;
 }
 
 .bottom-left h2,
@@ -470,10 +472,7 @@ input[type=submit] {
 
 
     /* MY WORK STYLES FOR MEDIA QUERY 1 START*/
-    .bottom-left {
-        bottom: 2%;
-    }
-
+ 
     #feature img {
         width: 100%;
     }
@@ -488,6 +487,7 @@ input[type=submit] {
 
     }
 
+  
     #placeholder-image img {
         width: 85%;
     }
