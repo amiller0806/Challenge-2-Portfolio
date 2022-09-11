@@ -453,6 +453,10 @@ input[type=submit] {
 
     /* MY WORK STYLES START FOR MEDIA QUERY 1START*/
 
+    .bottom-left {
+        bottom: 2.1%;
+    }
+
     #feature img {
         width: 80%;
     }
