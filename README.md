@@ -43,22 +43,28 @@ The following animation shows the web application's appearance and functionality
 
 
 ## Review
+Portfolio website that is responsive with multiple platforms. When the user first uses  the link to the deployed application, they will see with a navigation bar that displays a navigation bar, with "Ariel Miller" as the h1 element in the nav bar. This bar contains four nav links, "About Me," "Resume," "Work," and "Contact Me" that connect to their specified section. Beneath the nav bar is a hero image with several shades of purple. This image contains the text "Full Stack Developer" which is the subtitle of the page. 
+
+The About Me section contains information about my expertise as a developer. The Resume section contains a cropped image. which is a link to a PDF of the Resume. Beside the image, I instruct the user to click on this image to see my resume. The work section contains a transparent image of the website I created - Run Buddy that is clickable. The other four images are placeholders and are thus not clickable. The Contact Form provides a way for potential clients to contact me. After is the footer with the page subtitle (Fulstack Software Developer) and copyright information. 
 
 
-## Screenshot of deployed application 
-<!-- TODO: replace this with the website's screenshot-->
-![Screenshot of header, nav bar, & hero image](images/header-navbar-hero.jpg)
-![Screenshot of articles, search-engine optimization & online reputation management, & sidebar](images/articles-sidebar.jpg)
-![Screenshot of article  social media marketing, the sidebar, brand awareness & "cost management", & the footer](images/article-sidebar-footer.jpg)
 
+## Screenshots of deployed application on a laptop screen 
+![Screenshot of header, nav bar, & hero image](assets/images/readme-header-navbar-hero.jpg)
+![Screenshot of About Me section](assets/images/readme-aboutme.jpg)
+![Screenshot of Resume section](assets/images/readme-resume.jpg)
+![Screenshot 1 of My Work section](assets/images/readme-mywork-1.jpg)
+![Screenshot 2 of My Work section](assets/images/readme-mywork-2.jpg) 
+![Screenshot of Contact Form](assets/images/readme-contactform.jpg)
+![Screenshot of Footer](assets/images/readme-footer.jpg)
+## Sample view of deployed application on an iPhone 8 screen 
+![Sample view of header, nav bar, hero image, & About Me Section on Iphone 8 screen](assets/images/readme-iphone8-header-hero-aboutme.jpg)
 
 ## URL to deployed application
-https://amiller0806.github.io/HTML-CSS-refactor/ 
+https://github.com/amiller0806/HTML-Advanced-CSS-Portfolio.git
 
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+## Link to repository
+https://github.com/amiller0806/HTML-Advanced-CSS-Portfolio.git 
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
