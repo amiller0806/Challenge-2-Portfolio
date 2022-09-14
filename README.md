@@ -61,7 +61,7 @@ The About Me section contains information about my expertise as a developer. The
 ![Sample view of header, nav bar, hero image, & About Me Section on Iphone 8 screen](assets/images/readme-iphone8-header-hero-aboutme.jpg)
 
 ## URL to deployed application
-https://github.com/amiller0806/HTML-Advanced-CSS-Portfolio.git
+https://amiller0806.github.io/HTML-Advanced-CSS-Portfolio/ 
 
 ## Link to repository
 https://github.com/amiller0806/HTML-Advanced-CSS-Portfolio.git 
