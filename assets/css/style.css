@@ -268,8 +268,8 @@ h2,
 /* ABOUT ME AND RESUME STYLES START */
 .aboutme-text,
 .resume-text p {
-    letter-spacing: 1.5;
-    line-height: 2;
+    letter-spacing: 1.5px;
+    line-height: 2rem;
 }
 
 .bottom-left h2, .other-other-bottom-left h2, .other-bottom-left h3 {
@@ -321,7 +321,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
     justify-content: left;
     line-height: 1.5;
     position: absolute;
-    letter-spacing: .5;
+    letter-spacing: .5px;
 }
 
 /* Sets the following properties for all elements of the bottom-left class */
@@ -336,6 +336,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
     font-size: 1.5em;
 }
 
+.other-other-bottom-left p {
+    
+white-space: pre-line;
+display: block;
+}
+
 .other-other-bottom-left p, .bottom-left p {
     font-size: .7em;
     color: var(--secondary-color);
@@ -345,14 +351,24 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 .other-other-bottom-left, .other-bottom-left {
   
     padding: 6px;
+    /* display: flex; */
     
 }
 
 .other-other-bottom-left {
+    
     bottom: 10px;
-    width: 40.5%;
+    width: 50%;
 }
 
+.other-bottom-left {
+    bottom: 18.5px;
+   
+
+}
+
+
+  
 
 
 /* Sets the width to 94 for all elements with the id, feature */
