@@ -52,6 +52,7 @@ body {
     list-style-type: none;
 }
 
+
 /*Sets the following properties for each unordered list element on the nav bar*/
 .header nav ul li {
     margin-left: 25px;
@@ -193,7 +194,7 @@ textarea,
 }
 
 .hero-image div,
-.bottom-left,
+.bottom-left, .other-other-bottom-left,
 .other-bottom-left {
     position: absolute;
 }
@@ -271,13 +272,13 @@ h2,
     line-height: 2;
 }
 
-.bottom-left h2,.other-bottom-left h3 {
+.bottom-left h2, .other-other-bottom-left h2, .other-bottom-left h3 {
     text-align: left;
 }
 
 
 .resume-text p,
-.bottom-left h2,
+.bottom-left h2, .other-other-bottom-left h2,
 .other-bottom-left h3 {
     font-weight: bold;
 
@@ -316,7 +317,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 }
 
 /* Sets the following properties for the bottom left & other bottom left classes */
-.bottom-left .other-bottom-left {
+.bottom-left, .other-other-bottom-left, .other-bottom-left {
     justify-content: left;
     line-height: 1.5;
     position: absolute;
@@ -326,42 +327,55 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 /* Sets the following properties for all elements of the bottom-left class */
 .bottom-left {
     padding: 5px;
-    width: 13.5%;
+    width: 18.5%;
     bottom: 2.8%;
 }
 
 .bottom-left h2,
-.other-bottom-left h3 {
+.other-other-bottom-left h2 {
     font-size: 1.5em;
 }
 
-.bottom-left p {
+.other-other-bottom-left p, .bottom-left p {
     font-size: .7em;
+    color: var(--secondary-color);
 }
 
 /* Sets the following properties for all elements of the other-bottom-left class */
-.other-bottom-left {
-    bottom: 14px;
+.other-other-bottom-left, .other-bottom-left {
+  
     padding: 6px;
-    width: 24.5%;
+    
 }
 
-/* Sets background color to light purple */
-.bottom-left,
-.other-bottom-left,
-input[type=submit]:hover,
-.footer {
-    background-color: var(--primary-color);
+.other-other-bottom-left {
+    bottom: 10px;
+    width: 40.5%;
 }
+
+
 
 /* Sets the width to 94 for all elements with the id, feature */
 #feature {
     width: 94%;
 }
 
+/* Sets background color to light purple */
+.bottom-left, .other-other-bottom-left,
+.other-bottom-left,
+input[type=submit]:hover,
+.footer {
+    background-color: var(--primary-color);
+}
+
 /* MY WORK SECTION END */
 
+
+
+
 /* CONTACT ME STYLES START */
+
+
 
 /* Sets margin-right of all elements in the contact-form class */
 .contact-form {
@@ -487,7 +501,7 @@ input[type=submit] {
 
     .other-bottom-left {
         bottom: 3.5%;
-        width: 22%;
+        width: 30%;
 
     }
 
